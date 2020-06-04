@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Artificial intelligence</title>
+<link href="css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="primary_header">
+      <h1 class="title"> <b> Artificial intelligence </b></h1>
+    </div>
+    <nav class="secondary_header" id="menu">
+      <ul>
+        <a href="Home.html"><li><font color="FFFFFF"> INTRODUCTUION </font> </li></a>
+		<a href="Page (1).html"><li><font color="FFFFFF"> HISTORY </font> </li></a>
+		<a href="Page (2).html"><li><font color="FFFFFF"> CHALLENGES </font> </li></a>
+		<a href="Page (3).html"><li><font color="FFFFFF"> APPLICATIONS </font> </li></a>
+		<a href="Page (4).html"><li><font color="FFFFFF"> TOOLS </font> </li></a>
+        <a href="Page (5).html"><li><font color="FFFFFF"> REFERENCES </font> </li></a>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    
+    <article class="left_article">
+<h3>Tools</h3>
+
+      <p>Many problems in AI can be solved in theory by intelligently searching through many possible solutions: Reasoning can be reduced to performing a search. For example, logical proof can be viewed as searching for a path that leads from premises to conclusions, where each step is the application of an inference rule.<br> Planning algorithms search through trees of goals and subgoals, attempting to find a path to a target goal, a process called means-ends analysis.<br> Robotics algorithms for moving limbs and grasping objects use local searches in configuration space.<br> Many learning algorithms use search algorithms based on optimization. Simple exhaustive searches are rarely sufficient for most real-world problems: the search space (the number of places to search) quickly grows to astronomical numbers.<br> The result is a search that is too slow or never completes. The solution, for many problems, is to use "heuristics" or "rules of thumb" that prioritize choices in favor of those that are more likely to reach a goal and to do so in a shorter number of steps. In some search methodologies heuristics can also serve to entirely eliminate some choices that are unlikely to lead to a goal (called "pruning the search tree"). Heuristics supply the program with a "best guess" for the path on which the solution lies.<br> Heuristics limit the search for solutions into a smaller sample size.<br> A very different kind of search came to prominence in the 1990s, based on the mathematical theory of optimization. For many problems, it is possible to begin the search with some form of a guess and then refine the guess incrementally until no more refinements can be made.<br> These algorithms can be visualized as blind hill climbing: we begin the search at a random point on the landscape, and then, by jumps or steps, we keep moving our guess uphill, until we reach the top. Other optimization algorithms are simulated annealing, beam search and random optimization. </p>
+    </article>
+    <aside class="right_article"><img src="images/4.jpg" alt="" width="220" height="320" class="placeholder"/> </aside>
+  </section>
+<div>
+    <article class="Bottom_article">
+      <h3>Classifiers and statistical learning methods</h3>
+
+      <p>The simplest AI applications can be divided into two types: classifiers ("if shiny then diamond") and controllers ("if shiny then pick up"). Controllers do, however, also classify conditions before inferring actions, and therefore classification forms a central part of many AI systems. Classifiers are functions that use pattern matching to determine a closest match. They can be tuned according to examples, making them very attractive for use in AI. These examples are known as observations or patterns. In supervised learning, each pattern belongs to a certain predefined class. A class can be seen as a decision that has to be made. All the observations combined with their class labels are known as a data set. When a new observation is received, that observation is classified based on previous experience. A classifier can be trained in various ways; there are many statistical and machine learning approaches. The decision tree is perhaps the most widely used machine learning algorithm. Other widely used classifiers are the neural network, k-nearest neighbor algorithm,kernel methods such as the support vector machine (SVM), Gaussian mixture model, and the extremely popular naive Bayes classifier. Classifier performance depends greatly on the characteristics of the data to be classified, such as the dataset size, distribution of samples across classes, the dimensionality, and the level of noise. Model-based classifiers perform well if the assumed model is an extremely good fit for the actual data. Otherwise, if no matching model is available, and if accuracy (rather than speed or scalability) is the sole concern, conventional wisdom is that discriminative classifiers (especially SVM) tend to be more accurate than model-based classifiers such as "naive Bayes" on most practical data sets.</p>
+
+    </article>
+	    <article class="Bottom_article">
+      <h3>Logic</h3>
+
+      <p>Logic is used for knowledge representation and problem solving, but it can be applied to other problems as well. For example, the satplan algorithm uses logic for planningand inductive logic programming is a method for learning.<br> Several different forms of logic are used in AI research. Propositional logic involves truth functions such as "or" and "not". First-order logic adds quantifiers and predicates, and can express facts about objects, their properties, and their relations with each other. Fuzzy set theory assigns a "degree of truth" (between 0 and 1) to vague statements such as "Alice is old" (or rich, or tall, or hungry) that are too linguistically imprecise to be completely true or false. Fuzzy logic is successfully used in control systems to allow experts to contribute vague rules such as "if you are close to the destination station and moving fast, increase the train's brake pressure"; these vague rules can then be numerically refined within the system. Fuzzy logic fails to scale well in knowledge bases; many AI researchers question the validity of chaining fuzzy-logic inferences.</p>
+
+    </article>
+	    <article class="Bottom_article">
+      <h3>Deep recurrent neural networks</h3>
+
+      <p>Early on, deep learning was also applied to sequence learning with recurrent neural networks (RNNs) which are in theory Turing complete and can run arbitrary programs to process arbitrary sequences of inputs. The depth of an RNN is unlimited and depends on the length of its input sequence; thus, an RNN is an example of deep learning. RNNs can be trained by gradient descent but suffer from the vanishing gradient problem. In 1992, it was shown that unsupervised pre-training of a stack of recurrent neural networks can speed up subsequent supervised learning of deep sequential problems.
+
+Numerous researchers now use variants of a deep learning recurrent NN called the long short-term memory (LSTM) network published by Hochreiter & Schmidhuber in 1997. LSTM is often trained by Connectionist Temporal Classification (CTC). At Google, Microsoft and Baidu this approach has revolutionized speech recognition. For example, in 2015, Google's speech recognition experienced a dramatic performance jump of 49% through CTC-trained LSTM, which is now available through Google Voice to billions of smartphone users.<br> Google also used LSTM to improve machine translation, Language Modeling and Multilingual Language Processing.[264] LSTM combined with CNNs also improved automatic image captioning and a plethora of other applications.</p>
+
+    </article>
+</div>
+<footer class="secondary_header footer">
+    <div class="copyright">&copy; <strong>All Right ReServed to Mohamed ElSharqawy</strong></div>
+  </footer>
+</div>
+</body>
+</html>
